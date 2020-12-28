@@ -1,8 +1,8 @@
-# Tests for the skoopy modulo
+# Tests for the skoobpy module
 
 import pytest
-from skoopy import get_all_books
-from skoopy import save_desired_csv
+from skoobpy import get_all_books
+from skoobpy import save_desired_csv
 
 user_id = 1380619
 

@@ -1,4 +1,4 @@
-# 📘 Skoopy 
+# 📘 Skoobpy 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -6,17 +6,17 @@ Gives you methods to extract the users' data from [Skoob](skoob.com.br).
 
 ## ⚙️ Installation
 
-You can install Skoopy from PyPI:
+You can install Skoobpy from PyPI:
 
 ```bash
-pip install skoopy
+pip install skoobpy
 ```
 
 ## 💻 How to Use
 
-You can run it as a module in a command line as `skoopy` followed by an `user_id`. It is going to generate a csv file named `books_user_id.csv` with all informations of user's desired books.
+You can run it as a module in a command line as `skoobpy` followed by an `user_id`. It is going to generate a csv file named `books_user_id.csv` with all informations of user's desired books.
 
-    $ python -m skoopy <user_id>
+    $ python skoopy <user_id>
 
 ## 📑 Release History
 

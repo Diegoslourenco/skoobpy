@@ -1,5 +1,4 @@
-from skoopy import get_all_books
-from skoopy import save_desired_csv
+from skoobpy import *
 
 def main():
     from sys import argv
