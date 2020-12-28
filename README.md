@@ -27,7 +27,7 @@ You can run it as a module in a command line as `skoopy` followed by an `user_id
 
 Distributed under the MIT license. See [`LICENSE`](https://github.com/Diegoslourenco/skoopy/blob/main/LICENSE) for more information.
 
-# :octocat: Contributing
+## :octocat: Contributing
 
 
 Feel free to contribute with anything.
