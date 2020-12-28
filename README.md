@@ -1,12 +1,10 @@
 # :blue_book: Skoopy 
-____________________________________________________________________________________
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Gives you methods to extract the users' data from [Skoob](skoob.com.br).
 
 ## :gear: Installation
-____________________________________________________________________________________
 
 You can install Skoopy from PyPI:
 
@@ -26,14 +24,15 @@ You can run it as a module in a command line as `skoopy` followed by an `user_id
     * First version - extract users' desired books in CSV file
 
 ## :balance_scale: License
-_____________________________________________________________________________________
 
 Distributed under the MIT license. See [`LICENSE`](https://github.com/Diegoslourenco/skoopy/blob/main/LICENSE) for more information.
 
 # :octocat: Contributing
-_____________________________________________________________________________________
+
 
 Feel free to contribute with anything.
+
+[In case of any doubt, see this.](https://github.com/firstcontributions/first-contributions)
 
 To start with development, don't forget to install:
 
