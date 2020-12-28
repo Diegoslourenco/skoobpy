@@ -6,7 +6,7 @@ Gives you methods to extract the users' data from [Skoob](https://www.skoob.com.
 
 ## ⚙️ Installation
 
-You can install Skoobpy from PyPI:
+You can install Skoobpy from [PyPI](https://pypi.org/project/skoobpy/):
 
 ```bash
 pip install skoobpy
