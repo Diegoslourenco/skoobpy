@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Gives you methods to extract the users' data from [Skoob](skoob.com.br).
+Gives you methods to extract the users' data from [Skoob](https://www.skoob.com.br/).
 
 ## ⚙️ Installation
 
