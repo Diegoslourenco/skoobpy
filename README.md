@@ -16,7 +16,7 @@ pip install skoobpy
 
 You can run it as a module in a command line as `skoobpy` followed by an `user_id`. It is going to generate a csv file named `books_user_id.csv` with all informations of user's desired books.
 
-    $ python skoopy <user_id>
+    $ python skoobpy <user_id>
 
 ## 📑 Release History
 
