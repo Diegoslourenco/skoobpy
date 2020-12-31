@@ -6,8 +6,8 @@ with open('README.md', 'r', encoding='utf-8') as file:
 setup(
     name                ='skoobpy',
     packages            =find_packages(include=['skoobpy']),
-    version             ='0.1.2',
-    description         ='API to extract user\'s desired books from Skoob.com.br',
+    version             ='0.1.3',
+    description         ='extracts user\'s desired books from Skoob.com.br',
     long_description    = long_description,
     long_description_content_type='text/markdown',
     author              ='Diego Lourenço',

@@ -1,25 +1,32 @@
 # Tests for the skoobpy module
 
-import pytest
-from skoobpy import get_all_books
-from skoobpy import save_desired_csv
+# standard import
+import csv
 
-user_id = 1380619
+# third party import
+import pytest
+
+# skoobpy import
+from skoobpy import *
 
 @pytest.fixture
-def create_skoopy_csv(user_id):
-    return save_desired_csv(get_all_books(user_id))
+def total_books():
+    user_id = 1380619
+    return get_all_books(user_id)
+    
+@pytest.fixture
+def total_desired_books():
+    user_id = 1380619
+    all_books = get_all_books(user_id)
+    return filter_desired_books(all_books)
 
 # Tests
-def test_skoopy_csv(user_id):
+def test_total_books(total_books):
+    assert len(total_books) == 619
 
-    create_skoopy_csv(user_id)
+def test_total_desired_books(total_desired_books):
+    assert len(total_desired_books) == 466
 
-    file = open(f'book_{user_id}.csv')
-    content = csv.reader(file)
-    count = sum(1 for row in content)
-
-    assert count == 467
 
 
 
