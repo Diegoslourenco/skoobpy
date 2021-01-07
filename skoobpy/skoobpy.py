@@ -5,6 +5,9 @@ import csv
 url_base = 'https://www.skoob.com.br'
 
 def get_all_books(user_id):
+    """
+    Returns all the data books from a user
+    """
     url = f'{url_base}/v1/bookcase/books/{user_id}'
     print(f'request to {url}')
 
@@ -17,6 +20,9 @@ def get_all_books(user_id):
     return books_json
 
 def filter_desired_books(books_json):
+    """
+    Returns desired books from a JSON file
+    """
     books = []
 
     for book in books_json:
@@ -37,6 +43,9 @@ def filter_desired_books(books_json):
 
 
 def export_csv(books_list, user_id):
+    """
+    Exports the data to a CSV file
+    """
 
     header = ['Title', 'Author', 'Published Year', 'Pages', 'Publisher', 'Skoob\'s Page']
 
