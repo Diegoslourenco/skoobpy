@@ -41,6 +41,28 @@ def filter_desired_books(books_json):
         
     return books
 
+def filter_readed_books(books_json):
+    """
+    Returns readed books from a JSON file
+    """
+    books = []
+
+    for book in books_json:
+        if book['tipo'] == 1:
+            ed = book['edicao']
+
+            # if there is a subtitle, it must be concatenate to title
+            if ed['subtitulo'] != '':
+                book_title = str(ed['titulo']) + ' - '+ str(ed['subtitulo'])
+            else:
+                book_title = ed['titulo']
+
+            book_url = url_base + ed['url']
+            book_data = [book_title, ed['autor'], ed['ano'], ed['paginas'], ed['editora'], book_url]
+            books.append(book_data)
+        
+    return books
+
 def filter_currently_reading_books(books_json):
     """
     Returns currently reading books from a JSON file

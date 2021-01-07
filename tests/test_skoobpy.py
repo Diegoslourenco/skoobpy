@@ -21,6 +21,12 @@ def total_desired_books():
     return filter_desired_books(all_books)
 
 @pytest.fixture
+def total_readed_books():
+    user_id = 1380619
+    all_books = get_all_books(user_id)
+    return filter_readed_books(all_books)
+
+@pytest.fixture
 def total_currently_reading_books():
     user_id = 1380619
     all_books = get_all_books(user_id)
@@ -32,6 +38,9 @@ def test_total_books(total_books):
 
 def test_total_desired_books(total_desired_books):
     assert len(total_desired_books) == 466
+
+def test_total_readed_books(total_readed_books):
+    assert len(total_readed_books) == 111
 
 def test_total_currently_reading_books(total_currently_reading_books):
     assert len(total_currently_reading_books) == 3
