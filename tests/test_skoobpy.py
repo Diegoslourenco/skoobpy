@@ -40,7 +40,7 @@ def test_total_desired_books(total_desired_books):
     assert len(total_desired_books) == 466
 
 def test_total_readed_books(total_readed_books):
-    assert len(total_readed_books) == 111
+    assert len(total_readed_books) == 112
 
 def test_total_currently_reading_books(total_currently_reading_books):
     assert len(total_currently_reading_books) == 3

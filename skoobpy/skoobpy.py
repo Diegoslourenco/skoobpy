@@ -19,7 +19,7 @@ def get_all_books(user_id):
 
     return books_json
 
-def filter_desired_books(books_json):
+def filter_desired(books_json):
     """
     Returns desired books from a JSON file
     """
@@ -41,7 +41,7 @@ def filter_desired_books(books_json):
         
     return books
 
-def filter_readed_books(books_json):
+def filter_readed(books_json):
     """
     Returns readed books from a JSON file
     """
@@ -63,7 +63,7 @@ def filter_readed_books(books_json):
         
     return books
 
-def filter_currently_reading_books(books_json):
+def filter_currently_reading(books_json):
     """
     Returns currently reading books from a JSON file
     """
@@ -86,14 +86,14 @@ def filter_currently_reading_books(books_json):
     return books
 
 
-def export_csv(books_list, user_id):
+def export_csv(books_list, file_name):
     """
     Exports the data to a CSV file
     """
 
     header = ['Title', 'Author', 'Published Year', 'Pages', 'Publisher', 'Skoob\'s Page']
 
-    with open(f'books_{user_id}.csv', 'w', encoding='utf-8', newline='') as csvfile:
+    with open(f'{user_id}.csv', 'w', encoding='utf-8', newline='') as csvfile:
         data = csv.writer(csvfile, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         data.writerow(header)
 
