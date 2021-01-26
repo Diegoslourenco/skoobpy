@@ -18,19 +18,19 @@ def total_books():
 def total_desired_books():
     user_id = 1380619
     all_books = get_all_books(user_id)
-    return filter_desired_books(all_books)
+    return filter_desired(all_books)
 
 @pytest.fixture
 def total_readed_books():
     user_id = 1380619
     all_books = get_all_books(user_id)
-    return filter_readed_books(all_books)
+    return filter_readed(all_books)
 
 @pytest.fixture
 def total_currently_reading_books():
     user_id = 1380619
     all_books = get_all_books(user_id)
-    return filter_currently_reading_books(all_books)
+    return filter_currently_reading(all_books)
 
 # Tests
 def test_total_books(total_books):
