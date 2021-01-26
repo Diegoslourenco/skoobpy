@@ -31,9 +31,9 @@ The functions are:
 
 * `get_all_books(user_id)` receives a user id and returns all the books in the bookshelves as a JSON object.
 *  The filter functions receive a JSON with a group of books and filter it according to the criteria in a list that contains the book title, author's name, book release year, number of pages, publisher, and the book URL in the skoob site.
-  * `filter_desired(books_json)` returns the desired books.
-  * `filter_readed(books_json)` returns the readed books.
-  * `filter_currently_reading(books_json)` returns currently reading books.
+    * `filter_desired(books_json)` returns the desired books.
+    * `filter_readed(books_json)` returns the readed books.
+    * `filter_currently_reading(books_json)` returns currently reading books.
 * `export_csv(books_list, file_name)` exports a CSV file named as a given file name that contains the data in a list of books provided.
 
 
